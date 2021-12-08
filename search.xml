@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>解决gradle下载慢的问题</title>
+      <link href="/post/fce1b2e5.html"/>
+      <url>/post/fce1b2e5.html</url>
+      
+        <content type="html"><![CDATA[<p>在导入一些源码的时候，idea/AS会自动配置gradle包，但在google的情况下会出现下载慢，甚至失败的情况，下面一种方法有点效果。</p><p>打开<code>build.gradle</code>(最外面的文件，并非<code>app</code>文件内部)文件，添加一行代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">maven&#123; url = &quot;http://maven.aliyun.com/nexus/content/groups/public/</span><br></pre></td></tr></table></figure><p>位置为：</p><p>​                    <a href="https://imgchr.com/i/yc4H9e"><img src="https://s3.ax1x.com/2021/02/16/yc4H9e.png" alt="yc4H9e.png" style="zoom: 50%;" /></a></p><p>​                                    <strong>❗注意，在内有两个位置都需添加</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gradle </tag>
+            
+            <tag> idea </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ODBC和JDBC的比较</title>
+      <link href="/post/3d4929c6.html"/>
+      <url>/post/3d4929c6.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h2><ol><li><p><font color='red'> ODBC </font>(Ope Database Connectivity)，开放数据库互联，是微软公司开发和定义的一套数据库访问标准，用户也可以直接将sql语句送给ODBC。通过使用ODBC，应用程序能够使用相同的源代码和各种各样的数据库进行交互。下面是ODBC应用系统的体系结构。</p><p><a href="https://imgtu.com/i/2y1S4f"><img src="https://z3.ax1x.com/2021/06/09/2y1S4f.md.png" alt="2y1S4f.md.png"></a></p><p>​    一个基于ODBC的应用程序，对数据库的操作不依赖任何DBMS，不直接与DBMS打交道，所有的数据库操作由对应的DBMS的ODBC驱动程序完成。不论是SQL Server、Access还是Oracle数据库，均可用ODBC API进行访问。</p><p>​    ODBC的最大优点是**<font color="red">能以统一的方式处理所有的数据库</font>**</p></li><li><p><font color="red"> JDBC</font>（JavaDatabase Connectivity）是Java与数据库的接口规范，JDBC定义了一个支持标准SQL功能的通用低层API，它由Java 语言编写的类和接口组成，旨在让各数据库开发商为Java程序员提供标准的数据库API。</p><p>​    JDBC API定义了若干Java中的类，表示数据库连接、SQL指令、结果集、数据库元数据等。它允许Java程序员发送SQL指令并处理结果。下图是JDBC的体系架构。</p><p><img src="https://z3.ax1x.com/2021/06/09/2y39d1.png" alt="2y39d1.png"></p></li></ol><h2 id="二、联系"><a href="#二、联系" class="headerlink" title="二、联系"></a>二、联系</h2><p>​    JDBC是参考ODBC设计的，两者的相似性很多。</p><p>​    JDBC和ODBC都是<strong>用来连接数据库的启动程序</strong>，JDBC和ODBC由于<strong>具有数据库独立性</strong>甚至<strong>平台无关性</strong>，因而对Internet上异构数据库的访问提供了很好的支持。</p><p>​    JDBC与ODBC都是<strong>基于X/Open的SQL调用级接口</strong>；从结构上来讲，JDBC的总体结构类似于ODBC,都有四个组件：<strong>应用程序、驱动程序管理器、驱动程序和数据源</strong>,工作原理亦大体相同；在内容交互方面，JDBC保持了ODBC的基本特性,也独立于特定数据库。 而且都不是直接与数据库交互，而是通过驱动程序管理器。</p><h2 id="三、区别"><a href="#三、区别" class="headerlink" title="三、区别"></a>三、区别</h2><h3 id="1-JDBC比ODBC更容易理解"><a href="#1-JDBC比ODBC更容易理解" class="headerlink" title="1. JDBC比ODBC更容易理解"></a>1. JDBC比ODBC更容易理解</h3><p>​    这个主要是由语言特性决定的，ODBC用C来编写，JDBC用JAVA，C语言相比于JAVA更加抽象。另一方面是在ODBC中写一个查询，需要很多步骤，在JDBC中的数据库查询语句则简单很对，需求的源码比ODBC要少的多。JDBC数据库启动程序要比ODBC简易理解。</p><h3 id="2-JDBC数据库驱动程序面向对象"><a href="#2-JDBC数据库驱动程序面向对象" class="headerlink" title="2. JDBC数据库驱动程序面向对象"></a>2. JDBC数据库驱动程序面向对象</h3><p>​    JDBC用Java编写，完全遵循Java语言的优良特性。通常情况下，只要有Java功能需设计基础的用户都能在最短时间内了解JDBC驱动程序的架构，较量简易上手，能轻而易举的开发出强悍的数据库实际运用程序。而ODBC的话，由于其内部功能复杂，源代码编写要求高。为此即使是一个的C语言的高手，仍然需求花费不少的时间去了解那个数据库启动程序;在编写源代码的时间，还离不开有关的参考书本。</p><h3 id="3-JDBC的移植性要比ODBC要好"><a href="#3-JDBC的移植性要比ODBC要好" class="headerlink" title="3. JDBC的移植性要比ODBC要好"></a>3. JDBC的移植性要比ODBC要好</h3><p>​    通常情况下，安装完ODBC驱动程序之后，还需求经过确定的配置才能够应用。而不相同的配置在不相同数据库服务器之间不能够通用。也那是说，装一次需求配置一次。但是JDBC数据库驱动程序则不相同。假如采用JDBC数据库驱动程序的话，则只需要选取适当的 JDBC数据库驱动程序，就不需要额外的配置。在安装过程中，JDBC数据库驱动程序会自己完成有关的配置。为此JDBC的移植性要比ODBC要好。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JDBC </tag>
+            
+            <tag> ODBC </tag>
+            
+            <tag> 数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/post/4a17b156.html"/>
       <url>/post/4a17b156.html</url>
