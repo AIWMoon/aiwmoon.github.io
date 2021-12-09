@@ -76,7 +76,7 @@
 
   <url>
     <loc>http://aiwmoon.github.io/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,35 +84,35 @@
   
   <url>
     <loc>http://aiwmoon.github.io/tags/gradle/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://aiwmoon.github.io/tags/idea/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://aiwmoon.github.io/tags/JDBC/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://aiwmoon.github.io/tags/ODBC/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://aiwmoon.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -121,7 +121,7 @@
   
   <url>
     <loc>http://aiwmoon.github.io/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2021-12-08</lastmod>
+    <lastmod>2021-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
