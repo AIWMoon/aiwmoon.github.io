@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>微信小程序1--准备</title>
+      <link href="/post/b76b77b2z.html"/>
+      <url>/post/b76b77b2z.html</url>
+      
+        <content type="html"><![CDATA[<div class="note info simple"><p>本教程是用VS Code写小程序准备教程，不涉及其他。</p></div><h3 id="微信开发者工具"><a href="#微信开发者工具" class="headerlink" title="微信开发者工具"></a>微信开发者工具</h3><ol><li><p>下载微信开发者工具  : <a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">点击下载</a></p></li><li><p>微信扫码登录</p><img src="https://s2.loli.net/2021/12/26/8onL6q1gQBrtWkY.png" alt="202112261102519.png" style="zoom:50%;" /></li><li><p>新建一个新的小程序，选择不使用云服务，测试号可以在该页面进行申请：<a href="https://mp.weixin.qq.com/wxamp/sandbox?doc=1">申请小程序测试号</a>，官方教程：<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html">申请测试号 | 微信开放文档</a></p><img src="https://s2.loli.net/2021/12/26/lIL29V3ryEGkqap.png" style="zoom:50%;" /></li><li><p>创建成功</p><img src="C:/Users/ownmo/AppData/Roaming/Typora/typora-user-images/image-20211226111249445.png" alt="image-20211226111249445" style="zoom:50%;" /></li></ol><h3 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h3><ol><li><p>下载VS Code，链接：<a href="https://code.visualstudio.com/Download">Download Visual Studio Code - Mac, Linux, Windows</a>，根据系统下载。</p></li><li><p>安装后打开VS Code，快捷点<code>CTRL+SHIFT+X</code>或者点击左侧扩展按钮，进入扩展界面，搜索扩展名称，点击<code>INSTALL</code>进行安装：</p><ul><li><p>Chinese</p><p>该扩展为适用于 VS Code 的中文（简体）语言包，可以将VS Code的语言变为简体中文，方便使用。</p></li><li><p>WXML - Language Service</p><p>插件原名<code>minapp</code>,现已更名为<code>WXML - Language Service</code>, 未来将持续专注微信原生小程序wxml的支持；</p><p>微信小程序.wxml文件代码高亮，标签、属性的智能补全（同时支持原生小程序、mpvue 和 wepy 框架，并提供code snippets）。</p><p>主要功能</p><ul><li>一键创建小程序组件</li><li>标签名与属性自动补全</li><li>根据组件已有的属性，自动筛选出对应支持的属性集合</li><li>属性值自动补全</li><li>点击模板文件中的函数或属性跳转到 js/ts 定义的地方（纯 wxml 或 pug 文件才支持，vue 文件不完全支持）</li><li>样式名自动补全（纯 wxml 或 pug 文件才支持，vue 文件不完全支持）</li><li>在 vue 模板文件中也能自动补全，同时支持 pug 语言[支持 link（纯 wxml 或 pug 文件才支持，vue 文件不支持)</li><li>自定义组件自动补全（纯 wxml 文件才支持，vue 或 pug 文件不支持）</li><li>模板文件中 js 变量高亮（纯 wxml 或 pug 文件才支持，vue 文件不支持）</li><li>内置 snippets</li><li>支持 emmet 写法</li><li>wxml 格式化</li></ul></li><li><p>wechat-snippet</p><p>微信小程序代码辅助,代码片段自动完成。</p></li><li><p>vscode weapp api</p><p>为 VSCode 提供微信小程序 API 提示及代码片段</p></li><li><p>wxapp-helper</p><p>VSCODE 微信小程序开发助手</p><p> 功能</p><ul><li>生成页面/组件</li><li>页面/组件模板可配置(.js, .wxml, .wxss, .json)</li><li>文件名及命名风格可配置</li><li>支持生成 TypeScript</li><li>插入乱数假文(Lorem), 词库可配置, 字数可输入</li><li>插入图片 URL, 来源可配置, 尺寸可输入</li><li>插入用户头像 URL, 来源可配置, 尺寸可输入</li></ul></li></ul></li></ol><p>之后就可以用VS Code打开微信开发者工具创建的程序，可以使用VS Code进行开发，用微信开发者工具进行预览。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 毕设 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微信小程序 </tag>
+            
+            <tag> vscode </tag>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决gradle下载慢的问题</title>
       <link href="/post/fce1b2e5.html"/>
       <url>/post/fce1b2e5.html</url>
